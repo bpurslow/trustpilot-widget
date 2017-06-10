@@ -1,0 +1,107 @@
+.review {
+  left: 100%;
+  position: relative;
+
+  -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+  border-bottom: 2px solid $border;
+  background: $white;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  // Begin: CSS for Review Wrapper
+  &__wrapper {
+    padding: 8px 0 16px 8px
+  }
+  // End: CSS for Review Wrapper
+
+  // Begin: CSS for Review Title
+  &__title {
+    text-align: left;
+    font-size: 14px;
+    font-weight: 700;
+    padding-right: 50px;
+    margin-bottom: 8px;
+  }
+  // End: CSS for Review Title
+
+  // Begin: CSS for Review Name
+  &__name {
+    padding-right: 50px;
+    font-weight: 300;
+  }
+  // End: CSS for Review Name
+
+  // Begin: CSS for Review Stars
+  &__stars {
+    height: 24px;
+    padding-top: 8px;
+
+    &__image {
+      height: 100%;
+    }
+  }
+
+  // Begin: CSS for Review Body
+  &__body {
+    display: none;
+    font-size: 0.9rem;
+    padding-right: 16px;
+
+    .active & {
+      margin-right: 8px;
+      margin-top: 16px;
+      display: block;
+    }
+  }
+  // End: CSS for Review Body
+
+  // Begin: CSS for Review Reply
+  &__reply {
+    margin: 20px 0 -16px -8px;
+    padding: 16px 8px 16px 8px;
+    background: $border;
+    position: relative;
+    display: none;
+
+    .active & {
+      display: block;
+    }
+
+    &::before {
+      width: 0;
+      height: 0;
+      border-left: 0 solid transparent;
+      border-right: 20px solid transparent;
+      border-bottom: 10px solid $border;
+      content: '';
+      position: absolute;
+      top: -10px;
+      margin-left: -8px;
+    }
+
+    &__title {
+      font-weight: 500;
+      margin-bottom: 8px;
+    }
+
+    &__body {
+      font-weight: 300;
+    }
+  }
+  // End: CSS for Review Reply
+
+  // Begin: CSS for Review Score
+  &__score {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    color: white;
+    font-size: 3rem;
+    font-weight: 100;
+  }
+
+}

@@ -1,0 +1,5 @@
+@mixin custom_animation_with_delay($seconds) {
+  -webkit-animation: loading-data 3s infinite $seconds;
+  -o-animation: loading-data 3s infinite $seconds;
+  animation: loading-data 3s infinite $seconds;
+}

@@ -1,0 +1,64 @@
+@keyframes loading-data {
+    0%   {
+      width:5%;
+    }
+    30%  {
+      width:25%;
+    }
+    100% {
+      width:5%;
+    }
+}
+
+.loader{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  flex-wrap: wrap-reverse;
+}
+
+.rank_one {
+  background-color: transparentize($rank_one, 0.25);
+}
+
+.rank_two {
+  background-color: transparentize($rank_two, 0.25);
+}
+
+.rank_three {
+  background-color: transparentize($rank_three, 0.25);
+}
+
+.rank_four {
+  background-color: transparentize($rank_four, 0.25);
+}
+
+.rank_five {
+  background-color: transparentize($rank_five, 0.25);
+}
+
+.loading {
+  height: 20%;
+  @include custom_animation_with_delay(0s);
+  @extend .rank_one;
+
+  &:nth-of-type(2) {
+    @extend .rank_two;
+    @include custom_animation_with_delay(-3.5s);
+  }
+
+  &:nth-of-type(3) {
+    @extend .rank_three;
+    @include custom_animation_with_delay(-1.76s);
+  }
+
+  &:nth-of-type(4) {
+    @extend .rank_four;
+    @include custom_animation_with_delay(-1s);
+  }
+
+  &:nth-of-type(5) {
+    @extend .rank_five;
+    @include custom_animation_with_delay(-2.66s);
+  }
+}
