@@ -13,7 +13,7 @@ function get_company_data(url) {
     let starRating = Math.ceil(trustscore/2);
 
     return {
-        "companyTitle": "Fake Company LTD",
+        "companyTitle": "Fake widget LTD",
         "trustscore": trustscore.toFixed(1),
         "totalReviews": "1230",
         "starRating": starRating.toString()

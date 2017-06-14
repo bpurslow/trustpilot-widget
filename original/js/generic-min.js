@@ -1,1 +1,21 @@
-"use strict";function randomInt(n,t){return Math.random()*(t-n)+n}function sleep(n){return new Promise(function(t){return setTimeout(t,n)})}
+"use strict";
+
+/**
+ * Created by benpurslow on 01/06/2017.
+ */
+
+function randomInt(min, max) {
+  /**
+   * Generic random int function between 2 digits
+   */
+  return (Math.random() * (max - min) + min).toFixed(1);
+}
+
+function sleep(ms) {
+  /**
+   * Generic sleep function with promise
+   */
+  return new Promise(function (resolve) {
+    return setTimeout(resolve, ms);
+  });
+}

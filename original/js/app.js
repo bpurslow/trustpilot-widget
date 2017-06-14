@@ -1,16 +1,28 @@
 $(function init() {
-    const reviews = $('.review');
+    const widget_wrapper_rating = $('.widget__wrapper__rating');
 
-    generate_company($(".widget__wrapper__rating"));
+    // Fake API call, get company
+    generate_company(widget_wrapper_rating);
 
-    const rating = $('.rating');
+    // Trigger ellipsis on company title
+    $(".rating__companyTitle").dotdotdot({
+        height: 30
+    });
 
-    rating.click(function (e) {
+
+    widget_wrapper_rating.click(function (e) {
+        // On click handle the widgets transitions and generate reviews
         handle_widget();
     })
 });
 
 function handle_widget() {
+    /**
+     * Handle widget interaction
+     * Handle Loading
+     * Gather reviews and display
+     */
+
     const widget__wrapper = $('.widget__wrapper');
     const reviews__wrapper = $('.reviews');
 
@@ -49,6 +61,9 @@ function handle_widget() {
 }
 
 function expand_review(clicked_review) {
+    /**
+     * Handle the expansion of reviews
+     */
     $(".review").removeClass("active");
     clicked_review.addClass("active");
 }

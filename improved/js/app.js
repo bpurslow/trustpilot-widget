@@ -12,7 +12,7 @@ $(function init() {
 
 function handle_widget() {
     const widget__wrapper = $('.widget__wrapper');
-    const reviews__wrapper = $('.reviews');
+    const reviews__wrapper = $('.widget');
 
     if (widget__wrapper.hasClass('collapsing')) {
             widget__wrapper.removeClass('collapsing');

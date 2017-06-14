@@ -15,142 +15,372 @@
 		"oAP": "\/.babelrc",
 		"oF": 0
 		},
-	"\/.idea\/inspectionProfiles\/profiles_settings.xml": {
+	"\/__init__.py": {
 		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/.idea\/inspectionProfiles\/profiles_settings.xml",
-		"oF": 0
-		},
-	"\/.idea\/jsLibraryMappings.xml": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/.idea\/jsLibraryMappings.xml",
-		"oF": 0
-		},
-	"\/.idea\/markdown-navigator.xml": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/.idea\/markdown-navigator.xml",
-		"oF": 0
-		},
-	"\/.idea\/markdown-navigator\/profiles_settings.xml": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/.idea\/markdown-navigator\/profiles_settings.xml",
-		"oF": 0
-		},
-	"\/.idea\/misc.xml": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/.idea\/misc.xml",
-		"oF": 0
-		},
-	"\/.idea\/modules.xml": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/.idea\/modules.xml",
-		"oF": 0
-		},
-	"\/.idea\/trustpilot.iml": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/.idea\/trustpilot.iml",
-		"oF": 0
-		},
-	"\/.idea\/workspace.xml": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/.idea\/workspace.xml",
-		"oF": 0
-		},
-	"\/data.json": {
-		"ft": 524288,
 		"oA": 1,
-		"oAP": "\/data-min.json",
-		"oF": 0,
-		"oO": 0,
-		"oS": 1
+		"oAP": "\/__init__.py",
+		"oF": 0
 		},
-	"\/img\/1-stars-260x48.png": {
+	"\/client\/actions\/index-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/client\/actions\/index-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 1
+		},
+	"\/client\/actions\/index.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/client\/actions\/index-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 1
+		},
+	"\/client\/actions\/services-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/client\/actions\/services-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 1
+		},
+	"\/client\/components\/Company.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/client\/components\/Company-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 1
+		},
+	"\/client\/components\/loader.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/client\/components\/loader-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 1
+		},
+	"\/client\/components\/Review-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/client\/components\/Review-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 1
+		},
+	"\/client\/components\/Review.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/client\/components\/Review-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 1
+		},
+	"\/client\/components\/ReviewContainer.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/client\/components\/ReviewContainer-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 1
+		},
+	"\/client\/components\/Widget.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/client\/components\/Widget-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 1
+		},
+	"\/client\/img\/star-ratings\/1-stars.png": {
 		"ft": 32768,
 		"iS": 19821,
 		"oA": 0,
-		"oAP": "\/img\/1-stars-260x48.png",
+		"oAP": "\/client\/img\/star-ratings\/1-stars.png",
 		"oF": 0,
 		"oIPL": 1,
 		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
-	"\/img\/2-stars-260x48.png": {
+	"\/client\/img\/star-ratings\/2-stars.png": {
 		"ft": 32768,
 		"iS": 20450,
 		"oA": 0,
-		"oAP": "\/img\/2-stars-260x48.png",
+		"oAP": "\/client\/img\/star-ratings\/2-stars.png",
 		"oF": 0,
 		"oIPL": 1,
 		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
-	"\/img\/3-stars-260x48.png": {
+	"\/client\/img\/star-ratings\/3-stars.png": {
 		"ft": 32768,
 		"iS": 20354,
 		"oA": 0,
-		"oAP": "\/img\/3-stars-260x48.png",
+		"oAP": "\/client\/img\/star-ratings\/3-stars.png",
 		"oF": 0,
 		"oIPL": 1,
 		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
-	"\/img\/4-stars-260x48.png": {
+	"\/client\/img\/star-ratings\/4-stars.png": {
 		"ft": 32768,
 		"iS": 20302,
 		"oA": 0,
-		"oAP": "\/img\/4-stars-260x48.png",
+		"oAP": "\/client\/img\/star-ratings\/4-stars.png",
 		"oF": 0,
 		"oIPL": 1,
 		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
-	"\/img\/5-stars-260x48.png": {
+	"\/client\/img\/star-ratings\/5-stars.png": {
 		"ft": 32768,
 		"iS": 20269,
 		"oA": 0,
-		"oAP": "\/img\/5-stars-260x48.png",
+		"oAP": "\/client\/img\/star-ratings\/5-stars.png",
 		"oF": 0,
 		"oIPL": 1,
 		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
-	"\/img\/trustpilot-logo-light-bg-120x18.png": {
+	"\/client\/img\/star-ratings\/na-stars.png": {
+		"ft": 32768,
+		"iS": 18912,
+		"oA": 0,
+		"oAP": "\/client\/img\/star-ratings\/na-stars.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/client\/img\/trustpilot-logo-light-bg-120x18.png": {
 		"ft": 32768,
 		"iS": 2483,
 		"oA": 0,
-		"oAP": "\/img\/trustpilot-logo-light-bg-120x18.png",
+		"oAP": "\/client\/img\/trustpilot-logo-light-bg-120x18.png",
 		"oF": 0,
 		"oIPL": 1,
 		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
-	"\/img\/trustpilot.svg": {
+	"\/client\/img\/trustpilot.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "\/img\/trustpilot.svg",
+		"oAP": "\/client\/img\/trustpilot.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/index.html": {
+	"\/client\/index-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/client\/index-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/client\/index.html": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/index.html",
+		"oAP": "\/client\/index.html",
+		"oF": 0
+		},
+	"\/client\/index.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/client\/index-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"\/client\/sass\/base.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/client\/sass\/base-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/client\/sass\/base\/_widget.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/client\/sass\/base\/_widget.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/client\/sass\/components\/_loading.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/client\/sass\/components\/_loading.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/client\/sass\/components\/_rating.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/client\/sass\/components\/_rating.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/client\/sass\/components\/_review.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/client\/sass\/components\/_review.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/client\/sass\/main.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/client\/sass\/main-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/client\/sass\/main.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/client\/sass\/main.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/client\/sass\/modules\/_colors.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/client\/sass\/modules\/_colors.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/client\/sass\/modules\/_mixins.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/client\/sass\/modules\/_mixins.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/client\/sass\/modules\/_responsive.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/client\/sass\/modules\/_responsive.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/client\/sass\/modules\/_typography.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/client\/sass\/modules\/_typography.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/client\/utils\/utils-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/client\/utils\/utils-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 1
+		},
+	"\/client\/utils\/utils.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/client\/utils\/utils-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 1
+		},
+	"\/dist\/bundle.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/dist\/bundle-min.js",
+		"oF": 1,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/index-original.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/index-original.html",
 		"oF": 0
 		},
 	"\/js\/animation-min.js": {
@@ -258,142 +488,63 @@
 		"oAP": "\/build\/node_modules",
 		"oF": 0
 		},
-	"\/sass\/base.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
+	"\/package-lock.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/package-lock-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/package.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/package-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/to_do.md": {
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"eLB": 0,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
 		"oA": 0,
-		"oAP": "\/sass\/base-min.css",
+		"oAP": "\/to_do.html",
 		"oF": 0,
-		"oS": 0
-		},
-	"\/sass\/base\/_widget.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/sass\/base\/_widget.css",
-		"oF": 0,
+		"oFM": 0,
 		"oS": 0,
-		"uL": 1
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
 		},
-	"\/sass\/components\/_loading.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/sass\/components\/_loading.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/sass\/components\/_rating.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/sass\/components\/_rating.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/sass\/components\/_review.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/sass\/components\/_review.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/sass\/main.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
+	"\/webpack.config-min.js": {
+		"ft": 64,
+		"mi": 1,
 		"oA": 0,
-		"oAP": "\/sass\/main-min.css",
+		"oAP": "\/webpack.config-min-min.js",
 		"oF": 0,
-		"oS": 0
+		"sC": 1,
+		"tS": 0
 		},
-	"\/sass\/main.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/sass\/main.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/sass\/modules\/_colors.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
+	"\/webpack.config.js": {
+		"ft": 64,
+		"mi": 1,
 		"oA": 1,
-		"oAP": "\/sass\/modules\/_colors.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
+		"oAP": "\/webpack.config-min.js",
+		"oF": 1,
+		"sC": 1,
+		"tS": 0
 		},
-	"\/sass\/modules\/_mixins.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/sass\/modules\/_mixins.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/sass\/modules\/_responsive.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/sass\/modules\/_responsive.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/sass\/modules\/_typography.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/sass\/modules\/_typography.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
+	"\/yarn.lock": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/yarn.lock",
+		"oF": 0
 		}
 	},
 "hooks": [
@@ -411,7 +562,7 @@
 	},
 "projectAttributes": {
 	"creationDate": 517161205,
-	"displayValue": "trustpilot 2",
+	"displayValue": "improved",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "brackets_magenta"
 	},
@@ -2189,7 +2340,7 @@
 		"createSourceMap": 0,
 		"minifyOutput": 1,
 		"syntaxCheckerStyle": 1,
-		"transpilerStyle": 0
+		"transpilerStyle": 1
 		},
 	"languageDefaultsJSON": {
 		"autoOutputAction": 1,

@@ -4,7 +4,7 @@
 
 function generate_company(wrapper) {
     /**
-     * Temp Function to create a fake company
+     * Temp Function to create a fake widget
      */
     const company = get_company_data('apiv1/fake/companydata/company_id_here');
 
@@ -116,7 +116,7 @@ function generate_reviews() {
             `;
        }
 
-       $('.reviews').append(`
+       $('.widget').append(`
             <div class="review">
                 <div class="review__wrapper">
                     <div class="review__title">

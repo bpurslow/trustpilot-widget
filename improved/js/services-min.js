@@ -1,1 +1,1 @@
-"use strict";function get_company_data(t){var a=randomInt(0,10),e=Math.ceil(a/2);return{companyTitle:"Fake Company LTD",trustscore:a.toFixed(1),totalReviews:"1230",starRating:e.toString()}}
+"use strict";function get_company_data(t){var a=randomInt(0,10),e=Math.ceil(a/2);return{companyTitle:"Fake widget LTD",trustscore:a.toFixed(1),totalReviews:"1230",starRating:e.toString()}}

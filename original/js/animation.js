@@ -2,8 +2,11 @@
  * Created by benpurslow on 30/05/2017.
  */
 function load(wrapper) {
+    /**
+     * Trigger load bar inside wrapper
+     */
+
     wrapper.empty();
-    console.log("Attaching Loader");
     wrapper.append(`
             <div class="loader"></div>
         `);
@@ -15,6 +18,8 @@ function load(wrapper) {
 }
 
 function detach_load(wrapper) {
-    console.log("Detaching Loader");
+    /**
+     * Detach load bar from wrapper
+     */
     wrapper.find(".loader").remove();
 }
