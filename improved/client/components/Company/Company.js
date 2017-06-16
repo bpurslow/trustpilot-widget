@@ -3,7 +3,7 @@
  */
 const React = require('react');
 
-import {randomInt, getStarImage} from '../utils/utils';
+import {randomInt, getStarImage} from '../../utils/utils';
 
 export class Company extends React.Component{
     constructor(props) {
