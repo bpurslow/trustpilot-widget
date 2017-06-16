@@ -19,8 +19,7 @@ export class ReviewContainer extends React.Component{
             console.log("done")
             this._reviews = this._renderReviews(this.state.reviews);
             this.setState({loading: false});
-        }, 2000);
-
+        }, 20000);
     }
 
     _renderReviews(reviews) {
@@ -32,18 +31,16 @@ export class ReviewContainer extends React.Component{
     }
 
     render() {
+        let content = null;
+        if (this.state.loading) {
+            content = <Loader/>
+        } else {
+            content = this._reviews;
+        }
+
         return (
-            <section>
-                {
-                    this.state.loading &&
-                        <Loader/>
-                }
-                {
-                    this.state.loading ||
-                        <section className="reviews">
-                            {this._reviews}
-                        </section>
-                }
+            <section className="reviews">
+                {content}
             </section>
         )
     }

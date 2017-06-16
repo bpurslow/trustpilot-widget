@@ -5,7 +5,8 @@ const _ = require('lodash');
 require('../sass/main.scss');
 
 import {ReviewContainer} from './ReviewContainer';
-import {Company} from './Company';
+import {Company} from './Company/Company';
+import {Loader} from './Loader';
 
 class Widget  extends React.Component{
     constructor(props) {
@@ -34,7 +35,7 @@ class Widget  extends React.Component{
         return (
             <section className={this.isActive()} onClick={(e) => this.handleClick(e)}>
                 <Company/>
-                {this.state.open ? <ReviewContainer/>: null}
+                {this.state.open ? <ReviewContainer><Loader/></ReviewContainer>: null}
             </section>
         )
     }
