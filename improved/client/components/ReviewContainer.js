@@ -16,10 +16,9 @@ export class ReviewContainer extends React.Component{
 
     componentDidMount() {
         setTimeout(() => {
-            console.log("done")
             this._reviews = this._renderReviews(this.state.reviews);
             this.setState({loading: false});
-        }, 20000);
+        }, 2500);
     }
 
     _renderReviews(reviews) {

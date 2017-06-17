@@ -3,7 +3,7 @@
  */
 const React = require('react');
 
-import {randomInt, getStarImage} from '../../utils/utils';
+import {randomInt, getStarImage} from '../utils/utils';
 
 export class Company extends React.Component{
     constructor(props) {
@@ -17,14 +17,14 @@ export class Company extends React.Component{
     }
 
     render() {
-        let trustpilotLogo = require('../../img/trustpilot.svg');
+        let trustpilotLogo = require('../img/trustpilot.svg');
         return (
             <section className="widget__wrapper__rating">
                 <section className="rating">
                     <img className="rating__logo" src={trustpilotLogo}/>
                     <div className="rating__companyTitle">{this.state.company.companyTitle}</div>
                     <div className="rating__score">{this.state.company.trustscore}</div>
-                    <div className="rating__reviewTotal">{this.state.company.totalReviews}</div>
+                    <div className="rating__reviewTotal">Based on {this.state.company.totalReviews} Reviews</div>
                     <img className="rating__stars" style={{width: "100%"}} src={getStarImage(this.state.company.starRating)}/>
 
                 </section>
