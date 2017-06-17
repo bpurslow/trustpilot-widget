@@ -1,0 +1,1 @@
+"use strict";function randomInt(e,t){return Math.random()*(t-e)+e}function sleep(e){return new Promise(function(t){return setTimeout(t,e)})}Object.defineProperty(exports,"__esModule",{value:!0}),exports.randomInt=randomInt,exports.sleep=sleep;

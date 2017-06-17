@@ -1,0 +1,101 @@
+.widget {
+  //Font
+  font-family: $font;
+
+  &__wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+
+    //Dimensions
+    height: 20%;
+    width: 25%;
+
+    //Position
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    //Transitions
+    transition: width 1s ease, height 1s ease;
+
+    //Styles
+    background: $white;
+    border-radius: 10px 0 0 0;
+    -webkit-box-shadow: 0 0 0 1.5px $border;
+    -moz-box-shadow: 0 0 0 1.5px $border;
+    box-shadow: 0 0 0 1.5px $border;
+
+    &__rating {
+      flex: 1.25 3;
+      position: relative;
+      align-self: center;
+      height: 100%;
+      cursor: pointer;
+      border-right: 2px solid $border;
+
+      //Padding
+      padding-left: 8px;
+      padding-right: 8px;
+    }
+
+    &.collapsing {
+      width: 50%;
+      height: 50%;
+
+    }
+    &.collapsed {
+
+
+      @media (max-width: $mobile-width) {
+        width: 0;
+      }
+
+      @media (max-width: $tablet_width) and (min-width: $mobile-width) {
+        width: 75%;
+      }
+      width: 50%;
+      height: 50%;
+
+      & .reviews {
+        width: auto;
+        flex: 2 1;
+        overflow: scroll;
+      }
+
+      & .review {
+        flex: 1;
+        max-height: 25%;
+        min-height: 25%;
+
+        &.active {
+          max-height: 9999px; //Workaround to make the beautiful transition...
+          min-height: initial;
+        }
+      }
+
+      & .rating {
+        //top: 8px;
+        //transform: translateX(-50%) translateY(0%)
+      }
+    }
+  }
+}
+
+.reviews {
+  display: flex;
+  width: 0;
+  flex: 0;
+  flex-direction: column;
+  transition: all 0.8s ease;
+  overflow: hidden;
+
+  .collapsed &.dataLoaded, .collapsing &.dataLoaded {
+    display: flex;
+  }
+
+  &.dataLoaded {
+    display: none;
+  }
+}

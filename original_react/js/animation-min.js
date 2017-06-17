@@ -1,0 +1,1 @@
+"use strict";function load(o){o.empty(),console.log("Attaching Loader"),o.append('\n            <div class="loader"></div>\n        ');for(var a=0;a<5;++a)$(".loader").append('\n            <div class="loading"></div>\n        ')}function detach_load(o){console.log("Detaching Loader"),o.find(".loader").remove()}
