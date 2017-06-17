@@ -17,11 +17,17 @@ export class Company extends React.Component{
     }
 
     render() {
+        let trustpilotLogo = require('../../img/trustpilot.svg');
         return (
-            <section className="rating">
-                <p>{this.state.company.companyTitle}</p>
-                <img className="rating__stars" style={{width: "100%"}} src={getStarImage(this.state.company.starRating)}/>
-                <p>{this.state.company.totalReviews}</p>
+            <section className="widget__wrapper__rating">
+                <section className="rating">
+                    <img className="rating__logo" src={trustpilotLogo}/>
+                    <div className="rating__companyTitle">{this.state.company.companyTitle}</div>
+                    <div className="rating__score">{this.state.company.trustscore}</div>
+                    <div className="rating__reviewTotal">{this.state.company.totalReviews}</div>
+                    <img className="rating__stars" style={{width: "100%"}} src={getStarImage(this.state.company.starRating)}/>
+
+                </section>
             </section>
         )
     }
@@ -36,7 +42,7 @@ export class Company extends React.Component{
 
     return {
         "companyTitle": company_title,
-        "trustscore": trustscore,
+        "trustscore": trustscore.toFixed(1),
         "totalReviews": total_reviews,
         "starRating": star_rating.toString()
     };

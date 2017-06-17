@@ -1,1 +1,0 @@
-"use strict";var _Company=require("./Company"),company=new _Company.Company;test("getCompanyId returns object of company data",function(){expect(company._getCompany()).toEqual({companyTitle:"1",trustscore:"2",totalReviews:"3",starRating:"4"})});
