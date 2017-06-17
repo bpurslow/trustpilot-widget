@@ -18,7 +18,7 @@
     right: 0;
 
     //Transitions
-    transition: width 2s ease, height 2s ease;
+    transition: width 1s ease, height 1s ease;
 
     //Styles
     background: $white;
@@ -68,7 +68,6 @@
         flex: 1;
         max-height: 25%;
         min-height: 25%;
-        left:0;
 
         &.active {
           max-height: 9999px; //Workaround to make the beautiful transition...
@@ -89,12 +88,13 @@
   width: 0;
   flex: 0;
   flex-direction: column;
-  transition: all 1s ease;
-  
+  transition: all 0.8s ease;
+  overflow: hidden;
+
   .collapsed &.dataLoaded, .collapsing &.dataLoaded {
     display: flex;
   }
-  
+
   &.dataLoaded {
     display: none;
   }
