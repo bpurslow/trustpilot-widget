@@ -5,6 +5,7 @@ const React = require('react');
 
 import {getStarImage} from '../utils/utils';
 
+
 export default class Review extends React.Component {
     constructor(props) {
         super(props);
