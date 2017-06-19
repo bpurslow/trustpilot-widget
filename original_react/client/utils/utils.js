@@ -3,7 +3,7 @@ export function randomInt(min,max) {
 }
 
 export function sleep(ms) {
-  return new Promise(resolve => setTimeout(resolve, ms));
+    return new Promise(resolve => setTimeout(resolve, ms));
 }
 
 export function getStarImage(starRating) {
