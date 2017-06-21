@@ -1,31 +1,31 @@
-.rating {
+.company {
   display: flex;
   align-items: center;
   flex-direction: column;
   padding-top: 16px;
 
-  // Begin: Rating widget Title
-  &__companyTitle {
+  // Begin: Company Title
+  &__title {
     margin-top: 8px;
     margin-bottom: 8px;
     font-weight: 600;
     text-align: center;
     font-size: 1rem;
   }
-  // End: Rating widget Title
+  // End: Company Title
 
 
-  // Begin: Rating widget Logo
+  // Begin: Company Trustpilot Logo
   &__logo {
     max-width: 160px;
   }
 
-  // Begin: Rating Review Total
+  // Begin: Company Review Total
   &__reviewTotal {
     font-size: 0.8rem;
   }
 
-  // Begin: Rating Stars
+  // Begin: Company Stars
   &__stars {
     width: 100%;
     max-width: 180px;
