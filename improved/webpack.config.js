@@ -24,7 +24,7 @@ module.exports = {
             { test: /\.jsx$/, loader: 'babel-loader', exclude: /node_modules/ },
             { test: /\.scss$/, loaders: ['style-loader', 'css-loader', 'sass-loader'] },
             { test: /\.(jpe?g|png|svg)$/, loader: 'file-loader', options: {
-                name: '[name].[hash].[ext]',
+                name: '[name].[ext]',
             },
 },
         ]
