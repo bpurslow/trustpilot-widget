@@ -1,7 +1,7 @@
 /**
  * Created by benpurslow on 13/06/2017.
  */
-import {getTrustpilotData} from '../utils/utils.js';
+import {getTrustpilotData} from './Generic';
 
 
 export function getCompany(name = "trustpilot.com") {
@@ -18,6 +18,7 @@ export function getCompany(name = "trustpilot.com") {
                 resolve(response.id);
             })
             .catch(function (error) {
+                // TODO: getCompany: better error handling needed...
                 console.log("getCompanyFailed");
                 reject("boom");
             });
@@ -39,6 +40,7 @@ export function getCompanyData(companyId){
                 resolve(_parseCompanyData(data));
             })
             .catch( function (error) {
+                // TODO: getCompanyData: etter error handling needed...
                 console.log("getCompanyDataFailed");
                 reject("boom");
             });

@@ -2,7 +2,14 @@
  * Created by benpurslow on 11/06/2017.
  */
 
-import {getTrustpilotData} from '../utils/utils.js';
+import {getTrustpilotData, postTrustpilotData} from './Generic';
+
+export function addReview(review) {
+    return new Promise((resolve, reject) => {
+
+        postTrustpilotData
+    });
+}
 
 export function getReviews(companyId) {
     /**
