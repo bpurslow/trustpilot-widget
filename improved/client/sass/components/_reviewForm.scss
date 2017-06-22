@@ -1,16 +1,27 @@
+@import 'generic';
+
+
 .reviewForm {
 
   &__title {
     // We want this to mimic the button, UX wise it should close the action, I'll update if there's time
     // UPDATE: Done...that was easy
     @extend .actions__addReview;
-    margin-bottom: 8px;
+    margin-bottom: 16px;
+  }
+
+  &__error {
+    @extend .actions__addReview;
+    margin-top: -16px;
+    background: $rank_one;
+    color: $white;
   }
 
   &__label {
     margin: 8px auto 16px auto;
     display: block;
     width: 240px;
+    font-size: 0.8rem;
   }
 
   &__input {
@@ -19,7 +30,7 @@
     height: 32px;
     border: 0;
     box-shadow: 0 0 0 2px $border;
-    margin: 10px 0;
+    margin: 4px 0 0 0;
     padding-left: 8px;
     border-radius: 5px;
 
@@ -45,4 +56,7 @@
     }
   }
 
+  .starSelector {
+    @extend .starSelector;
+  }
 }

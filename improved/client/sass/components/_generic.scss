@@ -1,0 +1,155 @@
+// Man Sass get's crazy
+// https://hugogiraudel.com/2013/07/15/understanding-sass-lists/
+@function slice($list, $start: 1, $end: length($list)) {
+  $result: null;
+
+  @if type-of($start) != number or type-of($end) != number {
+    @warn "Either $start or $end are not a number for `slice`.";
+  }
+
+  @else if $start > $end {
+    @warn "The start index has to be lesser than or equals to the end index for `slice`.";
+  }
+
+  @else if $start < 1 or $end < 1 {
+    @warn "List indexes must be non-zero integers for `slice`.";
+  }
+
+  @else if $start > length($list) {
+    @warn "List index is #{$start} but list is only #{length($list)} item long for `slice`.";
+  }
+
+  @else if $end > length($list) {
+    @warn "List index is #{$end} but list is only #{length($list)} item long for `slice`.";
+  }
+
+  @else {
+    $result: ();
+
+    @for $i from $start through $end {
+      $result: append($result, nth($list, $i));
+    }
+  }
+
+  @return $result;
+}
+
+
+%starSelector__starNumber {
+  flex: 1;
+  position: relative;
+  height: 42px;
+  background: #ddd;
+  margin: 2px;
+
+  &::before {
+    content: "\2605";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 36px;
+    color: white;
+  }
+}
+
+@mixin starHover($parent, $children) {
+  $test: 0;
+  @each $child in $children {
+
+    $childIndex: index($children, $child);
+
+    $notIncludedChildren: slice($children, $childIndex, length($children));
+
+    @at-root #{$child}:hover{
+
+        $selector: ();
+        @each $item in $notIncludedChildren {
+
+          $selector: append($selector, unquote('#{$child}:hover ~ #{$item}'), 'comma');
+        }
+
+
+        // I mean this bit below literally does nothing right now.
+        // The INTENTION is:
+        // to give the background of PREVIOUS stars a color that matches the current star being hovered over.
+        @if($childIndex == 1) {
+          @at-root #{$child}:hover {
+           background: #000;
+          }
+        } @else if($childIndex == 2) {
+          @at-root #{$child}:hover {
+            background: #ba9876;
+          }
+        } @else if($childIndex == 3) {
+          @at-root #{$child}:hover {
+
+            background: #6789ab;
+          }
+        } @else if($childIndex == 4) {
+          @at-root #{$child}:hover {
+            background: #cdef01;
+          }
+        } @else if($childIndex == 5) {
+          @at-root #{$child}:hover {
+            background: #10fedc;
+          }
+        }
+        @at-root #{$selector} {
+          background: #eee !important;
+        }
+
+    }
+    $test: $test + 1;
+
+  }
+}
+
+.starSelector {
+  display: flex;
+  flex-direction: row;
+
+  $children : #{&}__one, #{&}__two, #{&}__three, #{&}__four, #{&}__five;
+  @include starHover(&, $children);
+
+  &__one {
+    @extend %starSelector__starNumber;
+
+    &:hover {
+      background: #000;
+    }
+  }
+
+  &__two {
+    @extend %starSelector__starNumber;
+
+    &:hover {
+      background: #ba9876;
+    }
+  }
+
+  &__three {
+    @extend %starSelector__starNumber;
+
+    &:hover {
+      background: #6789ab;
+    }
+  }
+
+  &__four {
+    @extend %starSelector__starNumber;
+
+    &:hover {
+      background: #cdef01;
+    }
+  }
+
+  &__five {
+    @extend %starSelector__starNumber;
+
+    &:hover {
+      background: #10fedc;
+    }
+  }
+
+}

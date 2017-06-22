@@ -42,11 +42,24 @@ export class ActionsContainer extends React.Component {
         this.setState({addReviewActive: false});
     }
 
+    validateForm(form) {
+        // TODO: validation here
+        return false;
+    }
+
     handleReviewFormSubmit(e) {
         e.stopPropagation();
-        this.props.onReviewAdded(this.reviewForm.state);
-        this.setState({addReviewActive: false});
-        this.props.onActive(false);
+        let validated = this.validateForm(this.reviewForm.state);
+        if (validated) {
+            this.props.onReviewAdded(this.reviewForm.state);
+            this.setState({addReviewActive: false});
+            this.props.onActive(false);
+        } else {
+            this.reviewForm.setState({
+                validationFailed: true
+            })
+        }
+
     }
 
     render() {
