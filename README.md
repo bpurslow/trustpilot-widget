@@ -3,6 +3,12 @@
 Hello there! So I've decided to upload my original solution in addition
 to a couple of fun takes on said original.
 
+The 2 new projects are written in React, according to stackshare you
+use React in addition to Angular (I've been on the business platform for
+instance) but I thought it best to apply myself to one language for this.
+
+Hope you like it.
+
 ## The Projects
 
 ### Original
