@@ -37,8 +37,25 @@ export class ReviewContainer extends React.Component{
             // Point is I KNOW THIS IS AN ISSUE I SWEAR!
             self.setState({reviews: reviews});
         }).then( function() {
+            // Check if object has more than 0 keys
+            if(Object.keys(self.props.newReview).length !== 0){
+                // Replicate reviews into a temp array
+                let reviews_array = self.state.reviews;
+                // Add newly created review to the start of reviews array
+                reviews_array.unshift(self.props.newReview);
+                // Update reviews state with the new array (same as old with new review at start)
+                self.setState({
+                    reviews: reviews_array
+                });
+                /**
+                 * I have a feeling the above is highly improvable, not sure of the impact of replacing the
+                 * entire state in the middle of these promises. TODO: look into effect on performance
+                 */
+            }
             self.setState({loading: false, content: self._renderReviews(self.state.reviews)});
         })
+
+
     }
 
     _renderReviews(reviews) {

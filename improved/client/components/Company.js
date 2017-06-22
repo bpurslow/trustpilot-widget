@@ -31,13 +31,11 @@ export class Company extends React.Component{
 
         return (
             <section className="company">
-                <section className="company">
-                    <img className="company__trustpilotLogo" src={trustpilotLogo}/>
-                    <div className="company__title">{this.state.company.companyTitle}</div>
-                    <div className="company__score">{this.state.company.trustscore}</div>
-                    <div className="company__reviewTotal">Based on {this.state.company.totalReviews} Reviews</div>
-                    <img className="company__stars" style={{width: "100%"}} src={getStarImage(this.state.company.starRating)}/>
-                </section>
+                <img className="company__trustpilotLogo" src={trustpilotLogo}/>
+                <div className="company__title">{this.state.company.companyTitle}</div>
+                <div className="company__score"><small>Trustscore:</small>{this.state.company.trustscore}</div>
+                <div className="company__reviewTotal">Based on {this.state.company.totalReviews} Reviews</div>
+                <img className="company__stars" style={{width: "100%"}} src={getStarImage(this.state.company.starRating)}/>
             </section>
         )
     }

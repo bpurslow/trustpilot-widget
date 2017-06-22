@@ -30,18 +30,21 @@ class Widget  extends React.Component{
             // Purely for transition purposes
             opening: false,
             loading: true,
-            companyId: ""
+            companyId: "",
+            newReview: {},
+            actionActive: false
         };
 
         // Passes this once, more efficient that doing per render
         // (https://medium.com/@rjun07a/binding-callbacks-in-react-components-9133c0b396c6)
         this.handleClick = this.handleClick.bind(this);
+        this.handleReviewAdded = this.handleReviewAdded.bind(this);
+        this.handleActionActive = this.handleActionActive.bind(this);
     }
 
     componentDidMount() {
         let self = this;
         getCompany().then( function (companyId) {
-            console.log("Done?");
             self.setState({companyId: companyId, loading: false});
         })
     }
@@ -67,6 +70,14 @@ class Widget  extends React.Component{
                 self.state.open = self.setState({open: !self.state.open, opening: false});
             });
         }
+    }
+
+    handleReviewAdded(review) {
+        this.setState({newReview: review});
+    }
+
+    handleActionActive(status) {
+        this.setState({actionActive: status});
     }
 
     isActive() {
@@ -100,8 +111,8 @@ class Widget  extends React.Component{
                     </section>
                     {/* If widget is open, mount ReviewContainer with Loader (ReviewContainer handles the loader)*/}
                     <section className="widget__contents">
-                        <ActionsContainer/>
-                        {this.state.open || this.state.opening ? <ReviewContainer companyId={this.state.companyId}><Loader/></ReviewContainer>: null}
+                        <ActionsContainer onReviewAdded={this.handleReviewAdded} onActive={this.handleActionActive}/>
+                        { (this.state.open || this.state.opening) && !this.state.actionActive ? <ReviewContainer newReview={this.state.newReview} companyId={this.state.companyId}><Loader/></ReviewContainer>: null}
                     </section>
                 </section>
             )
