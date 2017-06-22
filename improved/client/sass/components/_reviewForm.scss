@@ -1,0 +1,48 @@
+.reviewForm {
+
+  &__title {
+    // We want this to mimic the button, UX wise it should close the action, I'll update if there's time
+    // UPDATE: Done...that was easy
+    @extend .actions__addReview;
+    margin-bottom: 8px;
+  }
+
+  &__label {
+    margin: 8px auto 16px auto;
+    display: block;
+    width: 240px;
+  }
+
+  &__input {
+    display: block;
+    width: 240px;
+    height: 32px;
+    border: 0;
+    box-shadow: 0 0 0 2px $border;
+    margin: 10px 0;
+    padding-left: 8px;
+    border-radius: 5px;
+
+    &:focus {
+      outline: 0;
+      box-shadow: 0 0 0 1.5px $black;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    flex-direction: row;
+    margin-left: 64px;
+    margin-right: 64px;
+
+    &__submit, &__cancel {
+      @include trustpilot_button($height: 32px, $width: 0, $background-color: $border);
+      flex: 1;
+      display: block;
+      border: 0;
+      box-shadow: 0 1px 1px $border;
+      margin: 5px;
+    }
+  }
+
+}

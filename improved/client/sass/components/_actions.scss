@@ -1,0 +1,17 @@
+@import '../mixins/button';
+
+.actions {
+  position: fixed;
+  z-index: 1;
+
+  &__addReview {
+    @include trustpilot_button($height: 32px, $width: 432px, $background-color: #eee);
+  }
+
+  &__reviewForm {
+    height: $widget-height-open;
+    width: 428px;
+    background-color: $white;
+    overflow: scroll;
+  }
+}

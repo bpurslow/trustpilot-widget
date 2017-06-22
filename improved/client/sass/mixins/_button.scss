@@ -1,0 +1,22 @@
+@import "colors";
+
+
+@mixin trustpilot_button($height, $width, $background-color, $line-height: "") {
+    height: $height;
+    width: $width;
+    @if $line-height == true {
+        line-height: $line-height;
+    } @else {
+        line-height: $height;
+    }
+    background-color: $background-color;
+    text-align: center;
+
+    &:hover {
+      background-color: tint($background-color, 40%);
+    }
+
+    &:active {
+      background-color: shade($background-color, 5%);
+    }
+}
