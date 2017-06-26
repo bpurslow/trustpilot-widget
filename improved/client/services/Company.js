@@ -11,8 +11,8 @@ export function getCompany(name = "trustpilot.com") {
             "name": name
         }
     };
-    getTrustpilotData(args)
-        .then((response) => {
+    return getTrustpilotData(args)
+        .then( function(response) {
             return response.id;
         })
         .catch(function (error) {
@@ -27,8 +27,7 @@ export function getCompanyData(companyId){
     const args = {
         "api_path": "business-units/" + companyId
     };
-
-    getTrustpilotData(args)
+    return getTrustpilotData(args)
         .then((data) => {
             return _parseCompanyData(data);
         })

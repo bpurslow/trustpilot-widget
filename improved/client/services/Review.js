@@ -21,7 +21,7 @@ export function getReviews(companyId) {
         }
     };
 
-    getTrustpilotData(args)
+    return getTrustpilotData(args)
         .then((data) => {
             return data.reviews;
         })

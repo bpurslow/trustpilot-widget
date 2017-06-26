@@ -51,7 +51,7 @@ export class ReviewContainer extends React.Component{
                  * entire state in the middle of these promises. TODO: look into effect on performance
                  */
             }
-            this.setState({loading: false, content: this._renderReviews(self.state.reviews)});
+            this.setState({loading: false, content: this._renderReviews(this.state.reviews)});
         })
 
 
