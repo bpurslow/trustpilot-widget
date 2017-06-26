@@ -5,54 +5,46 @@ import {getTrustpilotData} from './Generic';
 
 
 export function getCompany(name = "trustpilot.com") {
-
-    return new Promise((resolve, reject) => {
-        let args = {
-            "api_path": "business-units/find",
-            "params": {
-                "name": name
-            }
-        };
-        getTrustpilotData(args)
-            .then(function (response) {
-                resolve(response.id);
-            })
-            .catch(function (error) {
-                // TODO: getCompany: better error handling needed...
-                console.log("getCompanyFailed");
-                reject("boom");
-            });
-    });
+    const args = {
+        "api_path": "business-units/find",
+        "params": {
+            "name": name
+        }
+    };
+    getTrustpilotData(args)
+        .then((response) => {
+            return response.id;
+        })
+        .catch(function (error) {
+            // TODO: getCompany: better error handling needed...
+            console.log("getCompanyFailed");
+            return "boom";
+        });
 }
 
 
 export function getCompanyData(companyId){
+    const args = {
+        "api_path": "business-units/" + companyId
+    };
 
-    return new Promise((resolve, reject) => {
-
-        let args = {
-            "api_path": "business-units/" + companyId
-        };
-
-        getTrustpilotData(args)
-            .then( function(data) {
-
-                resolve(_parseCompanyData(data));
-            })
-            .catch( function (error) {
-                // TODO: getCompanyData: etter error handling needed...
-                console.log("getCompanyDataFailed");
-                reject("boom");
-            });
+    getTrustpilotData(args)
+        .then((data) => {
+            return _parseCompanyData(data);
+        })
+        .catch((error) => {
+            // TODO: getCompanyData: etter error handling needed...
+            console.log("getCompanyDataFailed");
+            return "boom";
         });
 }
 
 
 function _parseCompanyData(company) {
-        let company_title = company.displayName;
-        let trustscore = company.trustScore;
-        let totalReviews = company.numberOfReviews.total;
-        let starRating = company.stars;
+        const company_title = company.displayName;
+        const trustscore = company.trustScore;
+        const totalReviews = company.numberOfReviews.total;
+        const starRating = company.stars;
 
         return {
             "companyTitle": company_title,

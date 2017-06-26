@@ -49,7 +49,7 @@ export class ActionsContainer extends React.Component {
 
     handleReviewFormSubmit(e) {
         e.stopPropagation();
-        let validated = this.validateForm(this.reviewForm.state);
+        const validated = this.validateForm(this.reviewForm.state);
         if (validated) {
             this.props.onReviewAdded(this.reviewForm.state);
             this.setState({addReviewActive: false});

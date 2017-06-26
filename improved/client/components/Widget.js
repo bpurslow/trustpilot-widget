@@ -43,10 +43,9 @@ class Widget  extends React.Component{
     }
 
     componentDidMount() {
-        let self = this;
-        getCompany().then( function (companyId) {
-            self.setState({companyId: companyId, loading: false});
-        })
+        getCompany().then((companyId) => {
+            this.setState({companyId: companyId, loading: false});
+        });
     }
 
     handleClick(e) {
@@ -56,9 +55,6 @@ class Widget  extends React.Component{
         } else {
             this.state.opening = this.setState({opening: true});
 
-            //Prepare for closure
-            let self = this;
-
             /**
              * Work around for visual purposes.
              * Waits for roughly the same length as CSS transition then triggers class change
@@ -66,8 +62,8 @@ class Widget  extends React.Component{
              *
              * Probably a better way to do this with React(CSS)TransitionGroup
              **/
-            sleep(1000).then( function() {
-                self.state.open = self.setState({open: !self.state.open, opening: false});
+            sleep(1000).then(() => {
+                this.state.open = this.setState({open: !this.state.open, opening: false});
             });
         }
     }

@@ -2,6 +2,7 @@
  * Created by benpurslow on 13/06/2017.
  */
 const React = require('react');
+const trustpilotLogo = require('../img/trustpilot.svg');
 
 import {getStarImage} from '../utils/utils';
 import {getCompanyData} from '../services/Company';
@@ -11,6 +12,7 @@ export class Company extends React.Component{
     constructor(props) {
         super(props);
 
+
         this.state = {
             company: {},
             loading: true
@@ -19,15 +21,13 @@ export class Company extends React.Component{
 
     componentDidMount() {
         if (this.props.companyId !== "") {
-            let self = this;
-            getCompanyData(this.props.companyId).then( function (company) {
-                self.setState({company: company, loading: false});
+            getCompanyData(this.props.companyId).then((company) => {
+                this.setState({company: company, loading: false});
             });
         }
     }
 
     render() {
-        let trustpilotLogo = require('../img/trustpilot.svg');
 
         return (
             <section className="company">

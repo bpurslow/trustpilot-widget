@@ -7,8 +7,8 @@ import {API_KEY, BASE_URL} from '../consts';
 
 export function getTrustpilotData(args) {
     return new Promise((resolve, reject) => {
-        let api_url = (typeof args.api_path !== undefined ? args.api_path : "");
-        let params = (typeof args.params !== undefined ? args.params : "");
+        const api_url = (typeof args.api_path !== undefined ? args.api_path : "");
+        const params = (typeof args.params !== undefined ? args.params : "");
         let query = "";
 
         // Thank you stackoverflow! ;)
@@ -41,7 +41,7 @@ export function getTrustpilotData(args) {
 
 export function postTrustpilotData(args) {
     return new Promise((resolve, reject) => {
-        let api_url = (typeof args.api_path !== undefined ? args.api_path : "");
+        const api_url = (typeof args.api_path !== undefined ? args.api_path : "");
 
         /**
          * As per docs, https://developers.trustpilot.com/authentication

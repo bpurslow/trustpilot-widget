@@ -5,10 +5,7 @@
 import {getTrustpilotData, postTrustpilotData} from './Generic';
 
 export function addReview(review) {
-    return new Promise((resolve, reject) => {
-
-        postTrustpilotData
-    });
+    postTrustpilotData
 }
 
 export function getReviews(companyId) {
@@ -17,38 +14,34 @@ export function getReviews(companyId) {
      * Get response and parse
      * number_of_reviews: Int to determine number of fake reviews
      */
-    return new Promise((resolve, reject) => {
+    const args = {
+        "api_path": "business-units/" + companyId + "/reviews",
+        "params" : {
+            "perPage": "5"
+        }
+    };
 
-        let args = {
-            "api_path": "business-units/" + companyId + "/reviews",
-            "params" : {
-                "perPage": "5"
-            }
-        };
+    getTrustpilotData(args)
+        .then((data) => {
+            return data.reviews;
+        })
+        .then((reviews_data) => {
 
-        getTrustpilotData(args)
-            .then( function(data) {
-                return data.reviews;
-            })
-            .then(function (reviews_data) {
+            const reviews = reviews_data.map((review, index) => (
+                parseReview(review, index)
+            ));
 
-                let reviews = reviews_data.map((review, index) => (
-                    parseReview(review, index)
-                ));
-
-                resolve(reviews);
-            });
-
-    });
+            return(reviews);
+        });
 }
 
 function parseReview(review, index) {
 
-    let consumer = review.consumer;
-    let body = review.text;
-    let title = review.title;
-    let stars = review.stars;
-    let reply = review.companyReply || "";
+    const consumer = review.consumer;
+    const body = review.text;
+    const title = review.title;
+    const stars = review.stars;
+    const reply = review.companyReply || "";
 
     return {
         "id": index + 1,
